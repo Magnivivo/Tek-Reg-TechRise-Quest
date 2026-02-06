@@ -1,38 +1,32 @@
-# TechRise Backend API - User Management
+# Auto Documentation TechRise Backend API - User Management
 
-## Overview
-Backend REST API built with Express.js and Prisma ORM for managing user data.
-
-## Tech Stack
 - **Framework**: Express.js
 - **Database**: SQLite (via Prisma ORM)
 - **ORM**: Prisma 5
-- **Additional**: dotenv, cors
 
 ## Project Structure
 ```
-backend/
 ├── prisma/
-│   ├── schema.prisma          # Database schema
-│   ├── migrations/            # Database migrations
-│   ├── seed.js               # Database seeder
-│   └── dev.db                # SQLite database file
+│   ├── schema.prisma         
+│   ├── migrations/           
+│   ├── seed.js               
+│   └── dev.db               
 ├── src/
 │   ├── config/
-│   │   └── prisma.js         # Prisma client instance
+│   │   └── prisma.js         
 │   ├── controllers/
-│   │   └── userController.js # User CRUD logic
+│   │   └── userController.js 
 │   ├── routes/
-│   │   └── userRoutes.js     # API routes
+│   │   └── userRoutes.js    
 │   ├── middleware/
-│   │   └── errorHandler.js   # Error handling
+│   │   └── errorHandler.js   
 │   ├── factories/
-│   │   └── userFactory.js    # Dummy data factory
+│   │   └── userFactory.js    
 │   └── utils/
-│       └── responseFormatter.js # Response formatter
-├── .env                      # Environment variables
-├── server.js                 # Main application
-└── package.json              # Dependencies
+│       └── responseFormatter.js 
+├── .env                      
+├── server.js                 
+└── package.json
 ```
 
 ## Database Schema
@@ -204,14 +198,8 @@ All API responses follow this standard format:
 - **404**: Not Found (user doesn't exist)
 - **500**: Internal Server Error
 
-## Testing
-Import `POSTMAN_COLLECTION.json` into Postman or Thunder Client for easy testing.
 
-## npm Scripts
-- `npm start` - Start server
-- `npm run dev` - Start with nodemon (auto-reload)
-- `npm run seed` - Populate database with dummy data
-
+## Readme file & Guide made by Claude + Gemini
 ## Notes
 - Email field must be unique
 - Default `isActive` value is `false` for new users
