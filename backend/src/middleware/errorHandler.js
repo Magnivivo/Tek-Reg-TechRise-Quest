@@ -11,7 +11,7 @@ const errorHandler = (err, req, res, next) => {
         switch (err.code) {
             case 'P2002':
                 return res.status(400).json(
-                    errorResponse(400, 'Unique constraint violation')
+                    errorResponse(400, 'Input error')
                 );
             case 'P2025':
                 return res.status(404).json(

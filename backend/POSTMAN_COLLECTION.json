@@ -1,7 +1,7 @@
 {
     "info": {
-        "name": "TechRise - User Management API",
-        "description": "API collection for testing TechRise User Management Backend",
+        "name": "TechRise - Backend",
+        "description": "TechRise User Registration Management Backend",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
     "item": [
